@@ -1,0 +1,210 @@
+:root {
+    --ff: sans-serif;
+    --fz-big: 48px;
+    --fz-medium: 24px;
+    --fz-normal: 20px;
+    --fz-small: 16px;
+    --fw-primray: 900;
+    --fw-secondray: 700;
+    --fw-light: 500;
+
+    --main-color: #044544;
+    --secondray-color: #E5EAEC;
+    --hover-color: #568203;
+    --bg-color: #FFFFFF;
+    --text-900: hsl(0, 0%, 0%);
+    --text-800: hsl(0, 0%, 10%);
+    --text-700: hsl(0, 0%, 20%);
+    --text-600: hsl(0, 0%, 30%);
+    --text-500: hsl(0, 0%, 40%);
+    --text-400: hsl(0, 0%, 50%);
+    --text-300: hsl(0, 0%, 60%);
+    --text-200: hsl(0, 0%, 70%);
+    --text-100: hsl(0, 0%, 80%);
+
+    --curve: 8px;
+
+    --mr-big: 60px;
+    --mr-medim: 30px;
+    --mr-normal: 20px;
+    --mr-small: 10px;
+    --pd-big: 60px;
+    --pd-medim: 30px;
+    --pd-normal: 20px;
+    --pd-small: 10px;
+}
+
+body {
+    min-height: 300vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* start header */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 5px #F1F1F1;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo {
+    user-select: none;
+}
+
+header .container .links {
+    display: flex;
+    align-items: center;
+}
+
+header .container .links li {
+    /* width: 150px;
+     */
+    padding: 0 var(--pd-medim);
+    height: 50px;
+    margin-left: 20px;
+    list-style: none;
+    text-align: center;
+    line-height: 50px;
+    border-radius: var(--curve);
+}
+
+header .container .links li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: var(--fz-medium);
+    font-weight: var(--fw-secondray);
+    color: var(--text-700);
+    text-decoration: none;
+    overflow: hidden;
+    text-align: center;
+    line-height: 50px;
+}
+
+header .container .links li:last-child a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* end header */
+/* start hero */
+.hero {
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-color: var(--secondray-color);
+    margin-top: 20px;
+}
+
+.hero .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* end hero */
+/* start list */
+.list {
+    width: 100%;
+    height: calc(100vh - 120px);
+    /* background-color: var(--secondray-color); */
+    /* margin-top: 20px; */
+    flex-grow: 1;
+}
+
+.list .container table {
+    width: 100%;
+}
+
+.list .container table {
+    width: 100%;
+    border-spacing: 0 30px;
+}
+
+.list .container table thead {
+    width: 100%;
+    height: 100px;
+}
+
+.list .container table thead th {
+    text-align: center;
+    font-size: var(--fz-medium);
+    font-weight: var(--fw-secondray);
+    color: var(--text-900);
+}
+
+.list .container table thead th {
+    text-align: center;
+    font-size: var(--fz-medium);
+    font-weight: var(--fw-secondray);
+    color: var(--text-900);
+}
+
+.list .container table tbody {
+    width: 100%;
+}
+
+.list .container table tbody tr {
+    width: 100%;
+    height: 100px;
+    background-color: var(--secondray-color);
+}
+
+.list .container table tbody tr td {
+    text-align: center;
+    font-size: var(--fz-normal);
+    font-weight: var(--fw-secondray);
+    color: var(--text-600);
+
+}
+
+.list .container table tbody tr td span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--mr-small);
+}
+
+/* end list */
+/* start footer */
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: var(--secondray-color);
+}
+
+footer .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .container p {
+    font-size: var(--fz-small);
+    font-weight: var(--fw-light);
+    color: var(--text-800);
+}
+
+footer .container p.powered-by {
+    display: flex;
+    align-items: center;
+}
+
+footer .container p a {
+    display: flex;
+    align-items: center;
+    color: #44CF8E;
+}
+
+/* end footer */

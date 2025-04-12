@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+
+    <title>Enest | Test</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Css file-->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/test.css" />
+</head>
+
+<body>
+    <header class="align-content">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="image/logo.png" alt="logo" height="70">
+            </a>
+            <ul class="links">
+                <li class="bor"><a href="#">Home</a></li>
+                <li><a href="#">Test</a></li>
+                <li><a href="sentences.html">Sentences</a></li>
+                <li><a href="#" class="bor"><img src="image/user.png" alt="profile" width="50" height="50"></a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="align-content">
+        <div class="container">
+            <div class="set-test">
+                <h2 class="head">Set test</h2>
+                <div class="test_name">
+                    <label for="test-name">Test name:</label>
+                    <input type="text" name="" id="test-name">
+                    <span class="message text-danger"></span>
+                </div>
+                <div class="sentences_number">
+                    <label for="number-of-questions">Number of sentences:</label>
+                    <input type="number" name="" id="number-of-questions" min="1" max="100" placeholder="0">
+                    <span class="message text-danger"></span>
+                </div>
+                <div class="test_time">
+                    <label for="test-time-hour">Test time:</label>
+                    <input type="number" name="" id="test-time-hour" min="0" max="24" placeholder="0">
+                    <label for="test-time-hour">H</label>
+                    <input type="number" name="" id="test-time-minute" min="0" max="60" placeholder="0">
+                    <label for="test-time-minute">M</label>
+                    <span class="message text-danger"></span>
+                </div>
+                <button id="start-test" class="btn-1">Start Test</button>
+            </div>
+            <div class="test">
+                <div class="top">
+                    <div class="header">
+                        <h1 class="head">Test 0001</h1>
+                        <p class="parag">Answer all the questions.</p>
+                    </div>
+                    <div class="sub">
+                        <span class="time">TIME LEFT: <br>
+                            <span> 03:39</span></span>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question-text">
+                        <h2><span>(10/1)</span> Question 1:</h2>
+                        <p>How to say the following in English?</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-text">
+                            <span class="dot"></span>
+                            <p>هـل احضر تك شيئا؟</p>
+                        </div>
+                        <div class="card-translation">
+
+                        </div>
+                        <div class="user-answer">
+                            <p><span id="answer"></span><br><span id="match"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="answer-box">
+                    <textarea name="" id="answer-box" cols="30" rows="10"></textarea>
+                    <span class="message text-danger"></span>
+                    <button id="check">CHECK</button>
+                </div>
+            </div>
+            <div class="finished_test">
+                <p id="total-score">Total score: 29%</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p class="copy-right mr-b-20">Engest&copy;2025</p>
+            <p class="powered-by mr-b-30">
+                Powered by <a href="#">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 2.66675L4 18.6667H16L14.6667 29.3334L28 13.3334H16L17.3333 2.66675Z"
+                            stroke="#10B981" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>supadase</a>
+            </p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/test.js"></script>
+</body>
+
+</html>

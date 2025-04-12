@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+
+    <title>Enest | Sentences</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Css file-->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sentences.css" />
+</head>
+
+<body>
+    <header class="align-content">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="image/logo.png" alt="logo" height="70">
+            </a>
+            <div class="menu">
+
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3 6H21" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3 18H21" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </div>
+            <ul class="links">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="test.html">Test</a></li>
+                <li><a href="#">Sentences</a></li>
+                <li><a href="#" class=""><img src="image/user.png" alt="profile" width="50"
+                            height="50"><span>Profile</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+    <main class="align-content">
+        <div class="container">
+
+            <div class="sentences-list">
+                <div class="top-list">
+                    <div class="header">
+                        <h1 class="head">SENTENCES</h1>
+                        <p class="parag">All sentences has been added.</p>
+                    </div>
+                    <div class="sub">
+                        <span class="total">Total sentences: <span>10</span></span>
+                        <button id="submit" class="btn-1">SUBMIT ALL</button>
+                    </div>
+                </div>
+                <div class="sentences">
+                </div>
+            </div>
+            <div class="add-sentences">
+                <h1 class="head">ADD SENTENCE</h1>
+                <form action="">
+                    <div class="sentence">
+                        <label for="sentence"> Sentence:</label>
+                        <textarea name="" id="sentence"></textarea>
+                        <span class="message text-danger"></span>
+                    </div>
+                    <div class="translation">
+                        <label for="translation">Translation:</label>
+                        <textarea name="" id="translation"></textarea>
+                        <span class="message"></span>
+                    </div>
+                    <div class="ispublic">
+                        <input type="checkbox" id="ispublic" name="ispublic" value="false">
+                        <label for="ispublic">Is Public:</label>
+                    </div>
+                </form>
+                <button id="add" class="btn-1">ADD</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p class="copy-right mr-b-20">Engest&copy;2025</p>
+            <p class="powered-by mr-b-30">
+                Powered by <a href="#">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 2.66675L4 18.6667H16L14.6667 29.3334L28 13.3334H16L17.3333 2.66675Z"
+                            stroke="#10B981" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>supadase</a>
+            </p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/sentences.js"></script>
+</body>
+
+</html>
